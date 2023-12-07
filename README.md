@@ -2,6 +2,9 @@
 Seeing that Vue 3 came out and I don't have more time to maintain it, I think it's a good time to archive it.
 Thanks to the community to help me to maintain it and thanks to the ones who used it on their projects, was an awesome experience ♥️
 
+# Fork from lucaspulliese
+Plugin forked from lucaspulliese https://github.com/lucaspulliese/vue-cool-lightbox. Added: slot `html` (html code under description and visible only with title or description)
+
 # Vue-cool-lightbox
 
 Vue-cool-lightbox is a pretty Vue.js lightbox component, inspired by [fancybox](http://fancyapps.com/fancybox/3/) with zoom, swipe, captions and videos supported.

@@ -293,6 +293,10 @@
             <transition name="cool-lightbox-slide-change" mode="out-in">
               <p key="description" v-html="items[imgIndex].description" v-if="checkIfIsObject(imgIndex) && items[imgIndex].description"></p>
             </transition>
+
+            <transition name="cool-lightbox-slide-change" mode="out-in">
+              <slot name="html"></slot>
+            </transition>
           </div>
           <!--/cool-lightbox-caption-->
         </transition>
