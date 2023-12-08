@@ -295,7 +295,9 @@
             </transition>
 
             <transition name="cool-lightbox-slide-change" mode="out-in">
-              <slot name="html"></slot>
+              <div class="html">
+                <slot name="html"></slot>
+              </div>
             </transition>
           </div>
           <!--/cool-lightbox-caption-->
@@ -1547,7 +1549,7 @@ export default {
         return false
       }
 
-      var elements = '.cool-lightbox__iframe, .cool-lightbox__iframe *, .cool-lightbox-zoom, .cool-lightbox-zoom *, .cool-lightbox-thumbs, svg, path, rect, .cool-lightbox-thumbs *, .cool-lightbox-button, .cool-lightbox-toolbar__btn, .cool-lightbox-toolbar__btn *, .cool-lightbox-button *, .cool-lightbox__slide__img *, .cool-lightbox-video, .cool-lightbox-caption h6, .cool-lightbox-caption p, .cool-lightbox-caption a'
+      var elements = '.cool-lightbox__iframe, .cool-lightbox__iframe *, .cool-lightbox-zoom, .cool-lightbox-zoom *, .cool-lightbox-thumbs, svg, path, rect, .cool-lightbox-thumbs *, .cool-lightbox-button, .cool-lightbox-toolbar__btn, .cool-lightbox-toolbar__btn *, .cool-lightbox-button *, .cool-lightbox__slide__img *, .cool-lightbox-video, .cool-lightbox-caption h6, .cool-lightbox-caption p, .cool-lightbox-caption a, .cool-lightbox-caption .html'
       if (!event.target.matches(elements)) {
         this.close()
       }
@@ -2584,6 +2586,11 @@ $breakpoints: (
         color: #eee;
       }
     }
+  }
+  .html {
+    padding: 0;
+    margin: 0;
+    text-align: center;
   }
 }
 
